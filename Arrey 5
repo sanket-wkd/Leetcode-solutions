@@ -1,0 +1,17 @@
+// easy just an logic
+class Solution {
+public:
+    vector<int> smallerNumbersThanCurrent(vector<int>& nums) {
+        vector<int> arr;
+        for (int i : nums) {
+            int count = 0;
+            for (int j : nums) {
+                if (i > j) {
+                    count++;
+                }
+            }
+            arr.push_back(count);
+        }
+        return arr;
+    }
+};
