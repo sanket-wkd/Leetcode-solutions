@@ -1,0 +1,24 @@
+| Syntax                                     | Meaning                                    | Best Use                             |
+| ------------------------------------------ | ------------------------------------------ | ------------------------------------ |
+| `for (int i = 0; i < 5; i++)`              | Start `i=0`, run while `i<5`, increase `i` | Fixed repetitions / index            |
+| `for (int i = 0; i < nums.size(); i++)`    | Visit indexes `0 → size-1`                 | When you need **index**              |
+| `for (int x : nums)`                       | Take every element of `nums` into `x`      | When you need **value only**         |
+| `for (int& x : nums)`                      | `x` refers to actual element               | When you want to **modify** elements |
+| `for (int i = 0, j = 10; i < j; i++, j--)` | Two variables/indexes                      | **Two pointers**                     |
+| `for (int i = 0; i < 10; i += 2)`          | `i = 0,2,4,6,8`                            | Skip elements                        |
+| `for (int i = 10; i > 0; i--)`             | `10 → 9 → ... → 1`                         | Reverse traversal                    |
+| `for (;;) `                                | Infinite loop                              | Special cases                        |
+
+
+
+
+| If you need...      | Use                                  |
+| ------------------- | ------------------------------------ |
+| Only repeat 5 times | `for(int i=0; i<5; i++)`             |
+| Index + value       | `for(int i=0; i<nums.size(); i++)`   |
+| Every value         | `for(int x : nums)`                  |
+| Modify every value  | `for(int& x : nums)`                 |
+| Two positions       | `for(int i=0,j=...; condition; ...)` |
+| Reverse             | `for(int i=n-1; i>=0; i--)`          |
+| Skip elements       | `i += 2`, `i += 3`, etc.             |
+| 2D/matrix           | Nested `for`                         |
